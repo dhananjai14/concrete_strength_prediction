@@ -1,0 +1,472 @@
+2022-09-17 16:04:40,973 INFO root 		Inside the class prediction_validation
+2022-09-17 16:04:40,973 INFO root 		Path given is C:\\Users\\preet\\Desktop\\DS\\Project\\Concrete Project\\Data to Predict
+2022-09-17 16:04:40,973 INFO root 		entering into "Database" class
+2022-09-17 16:04:44,356 INFO root 		Client created
+2022-09-17 16:04:44,356 INFO root 		Created the Database "project"
+2022-09-17 16:04:44,356 INFO root 		entering prediction data validation class
+2022-09-17 16:04:44,356 INFO root 		Inside the move file class
+2022-09-17 16:04:44,356 INFO root 		Inside the method "predict_validation" 
+2022-09-17 16:04:44,356 INFO root 		Start of validation on files
+2022-09-17 16:04:44,356 INFO root 		inside the method file_name_validation
+2022-09-17 16:04:44,356 INFO root 		predict folder path is C:\\Users\\preet\\Desktop\\DS\\Project\\Concrete Project\\Data to Predict
+2022-09-17 16:04:44,356 INFO root 		File name fetched
+2022-09-17 16:04:44,356 INFO root 		delete existing BadRawFolder
+2022-09-17 16:04:44,356 INFO root 		create BadRawFolder
+2022-09-17 16:04:44,356 INFO root 		delete existing GoodRawFolder
+2022-09-17 16:04:44,356 INFO root 		create GoodRawFolder
+2022-09-17 16:04:44,356 INFO root 		File Concrete_030922.csv has name in proper format. File moved to GoodRawFolder
+2022-09-17 16:04:44,356 INFO root 		Inside the file_column_validation method
+2022-09-17 16:04:44,356 INFO root 		good raw folder path C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 16:04:44,388 INFO root 		file Concrete_030922.csv was fetched
+2022-09-17 16:04:44,388 INFO root 		Columns fetched
+2022-09-17 16:04:44,388 INFO root 		column name validation completed for file Concrete_030922.csv
+2022-09-17 16:04:44,388 INFO root 		inside entire column missing method
+2022-09-17 16:04:44,388 INFO root 		path given is: C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 16:04:44,388 INFO root 		Concrete_030922.csv file successfully loaded
+2022-09-17 16:04:44,404 INFO root 		column validation completer for file Concrete_030922.csv
+2022-09-17 16:04:44,404 INFO root 		Finish of training file validation
+2022-09-17 16:04:44,404 INFO root 		DataBase insertion started
+2022-09-17 16:04:58,563 INFO root 		Inside the "insert into db" method
+2022-09-17 16:04:58,571 INFO root 		Delete "predictConcrete" collection if exists
+2022-09-17 16:04:58,571 INFO root 		data selected from GoodRawFolder
+2022-09-17 16:04:58,572 INFO root 		Concrete_030922.csv is read
+2022-09-17 16:04:58,605 INFO root 		File successfully loaded into the dataframe
+2022-09-17 16:04:58,605 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 16:04:58,614 INFO root 		Converted data frame to Dictionary
+2022-09-17 16:04:58,614 INFO root 		Create "predictConcrete" collection
+2022-09-17 16:04:58,775 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 16:04:58,801 INFO root 		DataBase insertion finished
+2022-09-17 16:04:58,801 INFO root 		inside the "to_archive" method
+2022-09-17 16:04:58,801 INFO root 		path of folder to be archived C:\Users\preet\Desktop\DS\Project\Concrete Project\BadRawFolder
+2022-09-17 16:04:58,801 INFO root 		destination archive folder "17_09_2022 16.04" created
+2022-09-17 16:04:58,801 INFO root 		Bad Raw folder archived
+2022-09-17 16:04:58,801 INFO root 		Inside the "extract from db" method
+2022-09-17 16:04:58,801 INFO root 		called collection predictConcrete
+2022-09-17 16:04:59,616 INFO root 		Data Successfully extracted from MongoDB
+2022-09-17 16:04:59,623 INFO root 		delete existing DataExtractedFromDB
+2022-09-17 16:04:59,623 INFO root 		create DataExtractedFromDB
+2022-09-17 16:04:59,632 INFO root 		cement.csv file successfully loaded in folder "DataExtractedFromDB"
+2022-09-17 16:04:59,632 INFO root 		Data extracted from the data base and stored in data extracted from DB
+2022-09-17 16:04:59,632 INFO root 		Validation operation completed
+2022-09-17 16:04:59,632 INFO root 		inside the class "prediction".
+2022-09-17 16:04:59,632 INFO root 		inside the method "predictionFromModel"
+2022-09-17 16:04:59,640 INFO root 		preprocessing started
+2022-09-17 16:04:59,640 INFO root 		inside the class "predict_preprocess"
+2022-09-17 16:04:59,640 INFO root 		path of predict preprocess data C:\Users\preet\Desktop\DS\Project\Concrete Project\DataExtractedFromDB\cement.csv
+2022-09-17 16:04:59,640 INFO root 		inside the fill na values method
+2022-09-17 16:04:59,648 INFO root 		null values imputed
+2022-09-17 16:04:59,648 INFO root 		New dataframe created
+2022-09-17 16:04:59,648 INFO root 		New data saved into cement.csv
+2022-09-17 16:04:59,648 INFO root 		inside the "create cluster" method
+2022-09-17 16:04:59,648 INFO root 		Data loaded
+2022-09-17 16:04:59,648 INFO root 		inside the class model_load
+2022-09-17 16:04:59,648 INFO root 		inside the method "to_load"
+2022-09-17 16:04:59,656 INFO root 		file kmean.sav successfully loaded
+2022-09-17 16:04:59,656 INFO root 		KMean model loaded
+2022-09-17 16:04:59,680 INFO root 		created cluster
+2022-09-17 16:04:59,688 INFO root 		Data set with clusters loaded into the "Clustered Data\predict\clustered_cement.csv"
+2022-09-17 16:04:59,688 INFO root 		preprocessing ended
+2022-09-17 16:04:59,688 INFO root 		Prediction started
+2022-09-17 16:04:59,688 INFO root 		inside the class model_load
+2022-09-17 16:04:59,688 INFO root 		inside the method "to_load"
+2022-09-17 16:04:59,688 INFO root 		file cluster.sav successfully loaded
+2022-09-17 16:04:59,696 INFO root 		inside the method "to_load"
+2022-09-17 16:04:59,808 INFO root 		file model_cluster_0.sav successfully loaded
+2022-09-17 16:04:59,824 INFO root 		inside the method "to_load"
+2022-09-17 16:04:59,840 INFO root 		file model_cluster_1.sav successfully loaded
+2022-09-17 16:04:59,850 INFO root 		entering into "Database" class
+2022-09-17 16:04:59,920 INFO root 		Client created
+2022-09-17 16:04:59,920 INFO root 		Created the Database "project"
+2022-09-17 16:05:03,042 INFO root 		Inside the "insert into db" method
+2022-09-17 16:05:03,042 INFO root 		Delete "Results" collection if exists
+2022-09-17 16:05:03,042 INFO root 		data selected from GoodRawFolder
+2022-09-17 16:05:03,042 INFO root 		cement.csv is read
+2022-09-17 16:05:03,066 INFO root 		File successfully loaded into the dataframe
+2022-09-17 16:05:03,066 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 16:05:03,074 INFO root 		Converted data frame to Dictionary
+2022-09-17 16:05:03,074 INFO root 		Create "Results" collection
+2022-09-17 16:05:03,250 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 16:05:03,282 INFO werkzeug 127.0.0.1 - - [17/Sep/2022 16:05:03] "POST /predict HTTP/1.1" 200 -
+2022-09-17 16:12:59,329 INFO root 		Inside the class prediction_validation
+2022-09-17 16:12:59,329 INFO root 		Path given is C:\\Users\\preet\\Desktop\\DS\\Project\\Concrete Project\\Data to Predict
+2022-09-17 16:12:59,329 INFO root 		entering into "Database" class
+2022-09-17 16:13:07,299 INFO root 		Client created
+2022-09-17 16:13:07,299 INFO root 		Created the Database "project"
+2022-09-17 16:13:07,299 INFO root 		entering prediction data validation class
+2022-09-17 16:13:07,299 INFO root 		Inside the move file class
+2022-09-17 16:13:07,299 INFO root 		Inside the method "predict_validation" 
+2022-09-17 16:13:07,299 INFO root 		Start of validation on files
+2022-09-17 16:13:07,299 INFO root 		inside the method file_name_validation
+2022-09-17 16:13:07,299 INFO root 		predict folder path is C:\\Users\\preet\\Desktop\\DS\\Project\\Concrete Project\\Data to Predict
+2022-09-17 16:13:07,299 INFO root 		File name fetched
+2022-09-17 16:13:07,299 INFO root 		delete existing BadRawFolder
+2022-09-17 16:13:07,307 INFO root 		create BadRawFolder
+2022-09-17 16:13:07,307 INFO root 		delete existing GoodRawFolder
+2022-09-17 16:13:07,307 INFO root 		create GoodRawFolder
+2022-09-17 16:13:07,307 INFO root 		File Concrete_030922.csv has name in proper format. File moved to GoodRawFolder
+2022-09-17 16:13:07,307 INFO root 		Inside the file_column_validation method
+2022-09-17 16:13:07,307 INFO root 		good raw folder path C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 16:13:07,315 INFO root 		file Concrete_030922.csv was fetched
+2022-09-17 16:13:07,315 INFO root 		Columns fetched
+2022-09-17 16:13:07,315 INFO root 		column name validation completed for file Concrete_030922.csv
+2022-09-17 16:13:07,315 INFO root 		inside entire column missing method
+2022-09-17 16:13:07,315 INFO root 		path given is: C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 16:13:07,315 INFO root 		Concrete_030922.csv file successfully loaded
+2022-09-17 16:13:07,315 INFO root 		column validation completer for file Concrete_030922.csv
+2022-09-17 16:13:07,315 INFO root 		Finish of training file validation
+2022-09-17 16:13:07,315 INFO root 		DataBase insertion started
+2022-09-17 16:13:41,302 ERROR root 		Traceback (most recent call last):
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\site-packages\pymongo\pool.py", line 1035, in _configured_socket
+    sock = ssl_context.wrap_socket(sock, server_hostname=host)
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:835: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\preet\Desktop\DS\Project\Concrete Project\DataBaseAction\database.py", line 37, in insert_into_db
+    self.db_mongo.drop_collection(collection_name)
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\site-packages\pymongo\database.py", line 919, in drop_collection
+    with self.__client._socket_for_writes(session) as sock_info:
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\site-packages\pymongo\mongo_client.py", line 1156, in _get_socket
+    with server.get_socket(handler=err_handler) as sock_info:
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\site-packages\pymongo\pool.py", line 1379, in get_socket
+    sock_info = self._get_socket()
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\site-packages\pymongo\pool.py", line 1489, in _get_socket
+    sock_info = self.connect()
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\site-packages\pymongo\pool.py", line 1332, in connect
+    sock = _configured_socket(self.address, self.opts)
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\site-packages\pymongo\pool.py", line 1048, in _configured_socket
+    _raise_connection_failure(address, exc, "SSL handshake failed: ")
+  File "C:\Users\preet\anaconda3\envs\Concrete Project\lib\site-packages\pymongo\pool.py", line 265, in _raise_connection_failure
+    raise NetworkTimeout(msg) from error
+pymongo.errors.NetworkTimeout: SSL handshake failed: cluster0-shard-00-01.n0zji.mongodb.net:27017: _ssl.c:835: The handshake operation timed out
+
+2022-09-17 16:13:41,302 INFO root 		DataBase insertion finished
+2022-09-17 16:13:41,302 INFO root 		inside the "to_archive" method
+2022-09-17 16:13:41,302 INFO root 		path of folder to be archived C:\Users\preet\Desktop\DS\Project\Concrete Project\BadRawFolder
+2022-09-17 16:13:41,302 INFO root 		destination archive folder "17_09_2022 16.13" created
+2022-09-17 16:13:41,302 INFO root 		Bad Raw folder archived
+2022-09-17 16:13:41,302 INFO root 		Inside the "extract from db" method
+2022-09-17 16:13:41,302 INFO root 		called collection predictConcrete
+2022-09-17 16:13:51,249 INFO root 		Data Successfully extracted from MongoDB
+2022-09-17 16:13:51,249 INFO root 		delete existing DataExtractedFromDB
+2022-09-17 16:13:51,249 INFO root 		create DataExtractedFromDB
+2022-09-17 16:13:51,249 INFO root 		cement.csv file successfully loaded in folder "DataExtractedFromDB"
+2022-09-17 16:13:51,249 INFO root 		Data extracted from the data base and stored in data extracted from DB
+2022-09-17 16:13:51,249 INFO root 		Validation operation completed
+2022-09-17 16:13:51,249 INFO root 		inside the class "prediction".
+2022-09-17 16:13:51,249 INFO root 		inside the method "predictionFromModel"
+2022-09-17 16:13:51,249 INFO root 		preprocessing started
+2022-09-17 16:13:51,249 INFO root 		inside the class "predict_preprocess"
+2022-09-17 16:13:51,249 INFO root 		path of predict preprocess data C:\Users\preet\Desktop\DS\Project\Concrete Project\DataExtractedFromDB\cement.csv
+2022-09-17 16:13:51,265 INFO root 		inside the fill na values method
+2022-09-17 16:13:51,265 INFO root 		null values imputed
+2022-09-17 16:13:51,265 INFO root 		New dataframe created
+2022-09-17 16:13:51,265 INFO root 		New data saved into cement.csv
+2022-09-17 16:13:51,265 INFO root 		inside the "create cluster" method
+2022-09-17 16:13:51,280 INFO root 		Data loaded
+2022-09-17 16:13:51,280 INFO root 		inside the class model_load
+2022-09-17 16:13:51,280 INFO root 		inside the method "to_load"
+2022-09-17 16:13:51,280 INFO root 		file kmean.sav successfully loaded
+2022-09-17 16:13:51,280 INFO root 		KMean model loaded
+2022-09-17 16:13:51,280 INFO root 		created cluster
+2022-09-17 16:13:51,280 INFO root 		Data set with clusters loaded into the "Clustered Data\predict\clustered_cement.csv"
+2022-09-17 16:13:51,280 INFO root 		preprocessing ended
+2022-09-17 16:13:51,280 INFO root 		Prediction started
+2022-09-17 16:13:51,280 INFO root 		inside the class model_load
+2022-09-17 16:13:51,280 INFO root 		inside the method "to_load"
+2022-09-17 16:13:51,280 INFO root 		file cluster.sav successfully loaded
+2022-09-17 16:13:51,296 INFO root 		inside the method "to_load"
+2022-09-17 16:13:51,358 INFO root 		file model_cluster_0.sav successfully loaded
+2022-09-17 16:13:51,390 INFO root 		inside the method "to_load"
+2022-09-17 16:13:51,406 INFO root 		file model_cluster_1.sav successfully loaded
+2022-09-17 16:13:51,406 INFO root 		entering into "Database" class
+2022-09-17 16:13:58,304 INFO root 		Client created
+2022-09-17 16:13:58,304 INFO root 		Created the Database "project"
+2022-09-17 16:14:07,520 INFO root 		Inside the "insert into db" method
+2022-09-17 16:14:07,520 INFO root 		Delete "Results" collection if exists
+2022-09-17 16:14:07,520 INFO root 		data selected from GoodRawFolder
+2022-09-17 16:14:07,520 INFO root 		cement.csv is read
+2022-09-17 16:14:07,520 INFO root 		File successfully loaded into the dataframe
+2022-09-17 16:14:07,520 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 16:14:07,520 INFO root 		Converted data frame to Dictionary
+2022-09-17 16:14:07,520 INFO root 		Create "Results" collection
+2022-09-17 16:14:07,693 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 16:14:07,693 INFO werkzeug 127.0.0.1 - - [17/Sep/2022 16:14:07] "POST /predict HTTP/1.1" 200 -
+2022-09-17 20:44:21,205 INFO root 		Inside the class prediction_validation
+2022-09-17 20:44:21,206 INFO root 		Path given is 
+2022-09-17 20:44:21,206 INFO root 		entering into "Database" class
+2022-09-17 20:44:22,447 INFO root 		Client created
+2022-09-17 20:44:22,448 INFO root 		Created the Database "project"
+2022-09-17 20:44:22,448 INFO root 		entering prediction data validation class
+2022-09-17 20:44:22,448 INFO root 		Inside the move file class
+2022-09-17 20:44:22,448 INFO root 		Inside the method "predict_validation" 
+2022-09-17 20:44:22,448 INFO root 		Start of validation on files
+2022-09-17 20:44:22,448 INFO root 		inside the method file_name_validation
+2022-09-17 20:44:22,448 INFO root 		predict folder path is 
+2022-09-17 20:44:22,456 ERROR root 		Traceback (most recent call last):
+  File "C:\Users\preet\Desktop\DS\Project\Concrete Project\DataValidation\PredictionDataValidation.py", line 30, in file_name_validate
+    file_names = os.listdir(path) # Get the file names in the directory
+FileNotFoundError: [WinError 3] The system cannot find the path specified: ''
+
+2022-09-17 20:44:22,456 INFO root 		Inside the file_column_validation method
+2022-09-17 20:44:22,456 INFO root 		good raw folder path C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 20:44:22,477 INFO root 		file Concrete_030922.csv was fetched
+2022-09-17 20:44:22,477 INFO root 		Columns fetched
+2022-09-17 20:44:22,477 INFO root 		column name validation completed for file Concrete_030922.csv
+2022-09-17 20:44:22,477 INFO root 		inside entire column missing method
+2022-09-17 20:44:22,477 INFO root 		path given is: C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 20:44:22,479 INFO root 		Concrete_030922.csv file successfully loaded
+2022-09-17 20:44:22,489 INFO root 		column validation completer for file Concrete_030922.csv
+2022-09-17 20:44:22,490 INFO root 		Finish of training file validation
+2022-09-17 20:44:22,490 INFO root 		DataBase insertion started
+2022-09-17 20:44:23,235 INFO root 		Inside the "insert into db" method
+2022-09-17 20:44:23,235 INFO root 		Delete "predictConcrete" collection if exists
+2022-09-17 20:44:23,235 INFO root 		data selected from GoodRawFolder
+2022-09-17 20:44:23,236 INFO root 		Concrete_030922.csv is read
+2022-09-17 20:44:23,242 INFO root 		File successfully loaded into the dataframe
+2022-09-17 20:44:23,242 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 20:44:23,246 INFO root 		Converted data frame to Dictionary
+2022-09-17 20:44:23,246 INFO root 		Create "predictConcrete" collection
+2022-09-17 20:44:23,382 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 20:44:23,382 INFO root 		DataBase insertion finished
+2022-09-17 20:44:23,382 INFO root 		inside the "to_archive" method
+2022-09-17 20:44:23,382 INFO root 		path of folder to be archived C:\Users\preet\Desktop\DS\Project\Concrete Project\BadRawFolder
+2022-09-17 20:44:23,384 INFO root 		destination archive folder "17_09_2022 20.44" created
+2022-09-17 20:44:23,385 INFO root 		Bad Raw folder archived
+2022-09-17 20:44:23,385 INFO root 		Inside the "extract from db" method
+2022-09-17 20:44:23,385 INFO root 		called collection predictConcrete
+2022-09-17 20:44:24,043 INFO root 		Data Successfully extracted from MongoDB
+2022-09-17 20:44:24,044 INFO root 		delete existing DataExtractedFromDB
+2022-09-17 20:44:24,045 INFO root 		create DataExtractedFromDB
+2022-09-17 20:44:24,057 INFO root 		cement.csv file successfully loaded in folder "DataExtractedFromDB"
+2022-09-17 20:44:24,057 INFO root 		Data extracted from the data base and stored in data extracted from DB
+2022-09-17 20:44:24,057 INFO root 		Validation operation completed
+2022-09-17 20:44:24,057 INFO root 		inside the class "prediction".
+2022-09-17 20:44:24,057 INFO root 		inside the method "predictionFromModel"
+2022-09-17 20:44:24,057 INFO root 		preprocessing started
+2022-09-17 20:44:24,057 INFO root 		inside the class "predict_preprocess"
+2022-09-17 20:44:24,058 INFO root 		path of predict preprocess data C:\Users\preet\Desktop\DS\Project\Concrete Project\DataExtractedFromDB\cement.csv
+2022-09-17 20:44:24,064 INFO root 		inside the fill na values method
+2022-09-17 20:44:24,071 INFO root 		null values imputed
+2022-09-17 20:44:24,071 INFO root 		New dataframe created
+2022-09-17 20:44:24,074 INFO root 		New data saved into cement.csv
+2022-09-17 20:44:24,074 INFO root 		inside the "create cluster" method
+2022-09-17 20:44:24,080 INFO root 		Data loaded
+2022-09-17 20:44:24,080 INFO root 		inside the class model_load
+2022-09-17 20:44:24,081 INFO root 		inside the method "to_load"
+2022-09-17 20:44:24,083 INFO root 		file kmean.sav successfully loaded
+2022-09-17 20:44:24,084 INFO root 		KMean model loaded
+2022-09-17 20:44:24,104 INFO root 		created cluster
+2022-09-17 20:44:24,108 INFO root 		Data set with clusters loaded into the "Clustered Data\predict\clustered_cement.csv"
+2022-09-17 20:44:24,108 INFO root 		preprocessing ended
+2022-09-17 20:44:24,108 INFO root 		Prediction started
+2022-09-17 20:44:24,108 INFO root 		inside the class model_load
+2022-09-17 20:44:24,108 INFO root 		inside the method "to_load"
+2022-09-17 20:44:24,108 INFO root 		file cluster.sav successfully loaded
+2022-09-17 20:44:24,121 INFO root 		inside the method "to_load"
+2022-09-17 20:44:24,186 INFO root 		file model_cluster_0.sav successfully loaded
+2022-09-17 20:44:24,195 INFO root 		inside the method "to_load"
+2022-09-17 20:44:24,215 INFO root 		file model_cluster_1.sav successfully loaded
+2022-09-17 20:44:24,225 INFO root 		entering into "Database" class
+2022-09-17 20:44:24,299 INFO root 		Client created
+2022-09-17 20:44:24,299 INFO root 		Created the Database "project"
+2022-09-17 20:44:24,728 INFO root 		Inside the "insert into db" method
+2022-09-17 20:44:24,728 INFO root 		Delete "Results" collection if exists
+2022-09-17 20:44:24,728 INFO root 		data selected from GoodRawFolder
+2022-09-17 20:44:24,729 INFO root 		cement.csv is read
+2022-09-17 20:44:24,738 INFO root 		File successfully loaded into the dataframe
+2022-09-17 20:44:24,738 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 20:44:24,739 INFO root 		Converted data frame to Dictionary
+2022-09-17 20:44:24,740 INFO root 		Create "Results" collection
+2022-09-17 20:44:24,878 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 20:44:24,897 INFO werkzeug 127.0.0.1 - - [17/Sep/2022 20:44:24] "POST /predict HTTP/1.1" 200 -
+2022-09-17 20:51:39,532 INFO root 		Inside the class prediction_validation
+2022-09-17 20:51:39,532 INFO root 		Path given is 
+2022-09-17 20:51:39,533 INFO root 		entering into "Database" class
+2022-09-17 20:51:40,768 INFO root 		Client created
+2022-09-17 20:51:40,768 INFO root 		Created the Database "project"
+2022-09-17 20:51:40,768 INFO root 		entering prediction data validation class
+2022-09-17 20:51:40,768 INFO root 		Inside the move file class
+2022-09-17 20:51:40,768 INFO root 		Inside the method "predict_validation" 
+2022-09-17 20:51:40,768 INFO root 		Start of validation on files
+2022-09-17 20:51:40,768 INFO root 		inside the method file_name_validation
+2022-09-17 20:51:40,768 INFO root 		predict folder path is 
+2022-09-17 20:51:40,770 ERROR root 		Traceback (most recent call last):
+  File "C:\Users\preet\Desktop\DS\Project\Concrete Project\DataValidation\PredictionDataValidation.py", line 30, in file_name_validate
+    file_names = os.listdir(path) # Get the file names in the directory
+FileNotFoundError: [WinError 3] The system cannot find the path specified: ''
+
+2022-09-17 20:51:40,770 INFO root 		Inside the file_column_validation method
+2022-09-17 20:51:40,770 INFO root 		good raw folder path C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 20:51:40,777 INFO root 		file Concrete_030922.csv was fetched
+2022-09-17 20:51:40,777 INFO root 		Columns fetched
+2022-09-17 20:51:40,777 INFO root 		column name validation completed for file Concrete_030922.csv
+2022-09-17 20:51:40,777 INFO root 		inside entire column missing method
+2022-09-17 20:51:40,777 INFO root 		path given is: C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 20:51:40,780 INFO root 		Concrete_030922.csv file successfully loaded
+2022-09-17 20:51:40,781 INFO root 		column validation completer for file Concrete_030922.csv
+2022-09-17 20:51:40,781 INFO root 		Finish of training file validation
+2022-09-17 20:51:40,781 INFO root 		DataBase insertion started
+2022-09-17 20:51:41,361 INFO root 		Inside the "insert into db" method
+2022-09-17 20:51:41,361 INFO root 		Delete "predictConcrete" collection if exists
+2022-09-17 20:51:41,361 INFO root 		data selected from GoodRawFolder
+2022-09-17 20:51:41,362 INFO root 		Concrete_030922.csv is read
+2022-09-17 20:51:41,364 INFO root 		File successfully loaded into the dataframe
+2022-09-17 20:51:41,364 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 20:51:41,369 INFO root 		Converted data frame to Dictionary
+2022-09-17 20:51:41,370 INFO root 		Create "predictConcrete" collection
+2022-09-17 20:51:41,516 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 20:51:41,535 INFO root 		DataBase insertion finished
+2022-09-17 20:51:41,535 INFO root 		inside the "to_archive" method
+2022-09-17 20:51:41,535 INFO root 		path of folder to be archived C:\Users\preet\Desktop\DS\Project\Concrete Project\BadRawFolder
+2022-09-17 20:51:41,536 INFO root 		destination archive folder "17_09_2022 20.51" created
+2022-09-17 20:51:41,536 INFO root 		Bad Raw folder archived
+2022-09-17 20:51:41,536 INFO root 		Inside the "extract from db" method
+2022-09-17 20:51:41,536 INFO root 		called collection predictConcrete
+2022-09-17 20:51:42,140 INFO root 		Data Successfully extracted from MongoDB
+2022-09-17 20:51:42,141 INFO root 		delete existing DataExtractedFromDB
+2022-09-17 20:51:42,141 INFO root 		create DataExtractedFromDB
+2022-09-17 20:51:42,173 INFO root 		cement.csv file successfully loaded in folder "DataExtractedFromDB"
+2022-09-17 20:51:42,173 INFO root 		Data extracted from the data base and stored in data extracted from DB
+2022-09-17 20:51:42,173 INFO root 		Validation operation completed
+2022-09-17 20:51:42,173 INFO root 		inside the class "prediction".
+2022-09-17 20:51:42,173 INFO root 		inside the method "predictionFromModel"
+2022-09-17 20:51:42,173 INFO root 		preprocessing started
+2022-09-17 20:51:42,173 INFO root 		inside the class "predict_preprocess"
+2022-09-17 20:51:42,173 INFO root 		path of predict preprocess data C:\Users\preet\Desktop\DS\Project\Concrete Project\DataExtractedFromDB\cement.csv
+2022-09-17 20:51:42,177 INFO root 		inside the fill na values method
+2022-09-17 20:51:42,182 INFO root 		null values imputed
+2022-09-17 20:51:42,182 INFO root 		New dataframe created
+2022-09-17 20:51:42,184 INFO root 		New data saved into cement.csv
+2022-09-17 20:51:42,185 INFO root 		inside the "create cluster" method
+2022-09-17 20:51:42,187 INFO root 		Data loaded
+2022-09-17 20:51:42,188 INFO root 		inside the class model_load
+2022-09-17 20:51:42,188 INFO root 		inside the method "to_load"
+2022-09-17 20:51:42,189 INFO root 		file kmean.sav successfully loaded
+2022-09-17 20:51:42,189 INFO root 		KMean model loaded
+2022-09-17 20:51:42,191 INFO root 		created cluster
+2022-09-17 20:51:42,194 INFO root 		Data set with clusters loaded into the "Clustered Data\predict\clustered_cement.csv"
+2022-09-17 20:51:42,195 INFO root 		preprocessing ended
+2022-09-17 20:51:42,195 INFO root 		Prediction started
+2022-09-17 20:51:42,195 INFO root 		inside the class model_load
+2022-09-17 20:51:42,195 INFO root 		inside the method "to_load"
+2022-09-17 20:51:42,196 INFO root 		file cluster.sav successfully loaded
+2022-09-17 20:51:42,203 INFO root 		inside the method "to_load"
+2022-09-17 20:51:42,269 INFO root 		file model_cluster_0.sav successfully loaded
+2022-09-17 20:51:42,280 INFO root 		inside the method "to_load"
+2022-09-17 20:51:42,301 INFO root 		file model_cluster_1.sav successfully loaded
+2022-09-17 20:51:42,309 INFO root 		entering into "Database" class
+2022-09-17 20:51:42,378 INFO root 		Client created
+2022-09-17 20:51:42,378 INFO root 		Created the Database "project"
+2022-09-17 20:51:42,786 INFO root 		Inside the "insert into db" method
+2022-09-17 20:51:42,786 INFO root 		Delete "Results" collection if exists
+2022-09-17 20:51:42,786 INFO root 		data selected from GoodRawFolder
+2022-09-17 20:51:42,787 INFO root 		cement.csv is read
+2022-09-17 20:51:42,790 INFO root 		File successfully loaded into the dataframe
+2022-09-17 20:51:42,790 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 20:51:42,793 INFO root 		Converted data frame to Dictionary
+2022-09-17 20:51:42,793 INFO root 		Create "Results" collection
+2022-09-17 20:51:42,936 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 20:51:42,937 INFO werkzeug 127.0.0.1 - - [17/Sep/2022 20:51:42] "POST /predict HTTP/1.1" 200 -
+2022-09-17 20:55:46,225 INFO root 		Inside the class prediction_validation
+2022-09-17 20:55:46,226 INFO root 		Path given is C:\\Users\\preet\\Desktop\\DS\Project\\Concrete Project\\Data to Predict
+2022-09-17 20:55:46,226 INFO root 		entering into "Database" class
+2022-09-17 20:55:47,385 INFO root 		Client created
+2022-09-17 20:55:47,385 INFO root 		Created the Database "project"
+2022-09-17 20:55:47,385 INFO root 		entering prediction data validation class
+2022-09-17 20:55:47,385 INFO root 		Inside the move file class
+2022-09-17 20:55:47,385 INFO root 		Inside the method "predict_validation" 
+2022-09-17 20:55:47,385 INFO root 		Start of validation on files
+2022-09-17 20:55:47,385 INFO root 		inside the method file_name_validation
+2022-09-17 20:55:47,385 INFO root 		predict folder path is C:\\Users\\preet\\Desktop\\DS\Project\\Concrete Project\\Data to Predict
+2022-09-17 20:55:47,386 INFO root 		File name fetched
+2022-09-17 20:55:47,386 INFO root 		delete existing BadRawFolder
+2022-09-17 20:55:47,387 INFO root 		create BadRawFolder
+2022-09-17 20:55:47,388 INFO root 		delete existing GoodRawFolder
+2022-09-17 20:55:47,388 INFO root 		create GoodRawFolder
+2022-09-17 20:55:47,389 INFO root 		File Concrete_030922.csv has name in proper format. File moved to GoodRawFolder
+2022-09-17 20:55:47,389 INFO root 		Inside the file_column_validation method
+2022-09-17 20:55:47,390 INFO root 		good raw folder path C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 20:55:47,418 INFO root 		file Concrete_030922.csv was fetched
+2022-09-17 20:55:47,418 INFO root 		Columns fetched
+2022-09-17 20:55:47,418 INFO root 		column name validation completed for file Concrete_030922.csv
+2022-09-17 20:55:47,418 INFO root 		inside entire column missing method
+2022-09-17 20:55:47,418 INFO root 		path given is: C:\Users\preet\Desktop\DS\Project\Concrete Project\GoodRawFolder
+2022-09-17 20:55:47,421 INFO root 		Concrete_030922.csv file successfully loaded
+2022-09-17 20:55:47,422 INFO root 		column validation completer for file Concrete_030922.csv
+2022-09-17 20:55:47,422 INFO root 		Finish of training file validation
+2022-09-17 20:55:47,422 INFO root 		DataBase insertion started
+2022-09-17 20:55:47,948 INFO root 		Inside the "insert into db" method
+2022-09-17 20:55:47,948 INFO root 		Delete "predictConcrete" collection if exists
+2022-09-17 20:55:47,948 INFO root 		data selected from GoodRawFolder
+2022-09-17 20:55:47,950 INFO root 		Concrete_030922.csv is read
+2022-09-17 20:55:47,953 INFO root 		File successfully loaded into the dataframe
+2022-09-17 20:55:47,953 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 20:55:47,957 INFO root 		Converted data frame to Dictionary
+2022-09-17 20:55:47,957 INFO root 		Create "predictConcrete" collection
+2022-09-17 20:55:48,087 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 20:55:48,087 INFO root 		DataBase insertion finished
+2022-09-17 20:55:48,087 INFO root 		inside the "to_archive" method
+2022-09-17 20:55:48,087 INFO root 		path of folder to be archived C:\Users\preet\Desktop\DS\Project\Concrete Project\BadRawFolder
+2022-09-17 20:55:48,088 INFO root 		destination archive folder "17_09_2022 20.55" created
+2022-09-17 20:55:48,088 INFO root 		Bad Raw folder archived
+2022-09-17 20:55:48,088 INFO root 		Inside the "extract from db" method
+2022-09-17 20:55:48,088 INFO root 		called collection predictConcrete
+2022-09-17 20:55:48,744 INFO root 		Data Successfully extracted from MongoDB
+2022-09-17 20:55:48,745 INFO root 		delete existing DataExtractedFromDB
+2022-09-17 20:55:48,745 INFO root 		create DataExtractedFromDB
+2022-09-17 20:55:48,750 INFO root 		cement.csv file successfully loaded in folder "DataExtractedFromDB"
+2022-09-17 20:55:48,751 INFO root 		Data extracted from the data base and stored in data extracted from DB
+2022-09-17 20:55:48,751 INFO root 		Validation operation completed
+2022-09-17 20:55:48,751 INFO root 		inside the class "prediction".
+2022-09-17 20:55:48,751 INFO root 		inside the method "predictionFromModel"
+2022-09-17 20:55:48,751 INFO root 		preprocessing started
+2022-09-17 20:55:48,751 INFO root 		inside the class "predict_preprocess"
+2022-09-17 20:55:48,751 INFO root 		path of predict preprocess data C:\Users\preet\Desktop\DS\Project\Concrete Project\DataExtractedFromDB\cement.csv
+2022-09-17 20:55:48,754 INFO root 		inside the fill na values method
+2022-09-17 20:55:48,759 INFO root 		null values imputed
+2022-09-17 20:55:48,760 INFO root 		New dataframe created
+2022-09-17 20:55:48,763 INFO root 		New data saved into cement.csv
+2022-09-17 20:55:48,763 INFO root 		inside the "create cluster" method
+2022-09-17 20:55:48,768 INFO root 		Data loaded
+2022-09-17 20:55:48,768 INFO root 		inside the class model_load
+2022-09-17 20:55:48,768 INFO root 		inside the method "to_load"
+2022-09-17 20:55:48,768 INFO root 		file kmean.sav successfully loaded
+2022-09-17 20:55:48,768 INFO root 		KMean model loaded
+2022-09-17 20:55:48,771 INFO root 		created cluster
+2022-09-17 20:55:48,774 INFO root 		Data set with clusters loaded into the "Clustered Data\predict\clustered_cement.csv"
+2022-09-17 20:55:48,774 INFO root 		preprocessing ended
+2022-09-17 20:55:48,774 INFO root 		Prediction started
+2022-09-17 20:55:48,774 INFO root 		inside the class model_load
+2022-09-17 20:55:48,774 INFO root 		inside the method "to_load"
+2022-09-17 20:55:48,775 INFO root 		file cluster.sav successfully loaded
+2022-09-17 20:55:48,782 INFO root 		inside the method "to_load"
+2022-09-17 20:55:48,843 INFO root 		file model_cluster_0.sav successfully loaded
+2022-09-17 20:55:48,854 INFO root 		inside the method "to_load"
+2022-09-17 20:55:48,873 INFO root 		file model_cluster_1.sav successfully loaded
+2022-09-17 20:55:48,882 INFO root 		entering into "Database" class
+2022-09-17 20:55:48,953 INFO root 		Client created
+2022-09-17 20:55:48,953 INFO root 		Created the Database "project"
+2022-09-17 20:55:49,363 INFO root 		Inside the "insert into db" method
+2022-09-17 20:55:49,363 INFO root 		Delete "Results" collection if exists
+2022-09-17 20:55:49,363 INFO root 		data selected from GoodRawFolder
+2022-09-17 20:55:49,364 INFO root 		cement.csv is read
+2022-09-17 20:55:49,368 INFO root 		File successfully loaded into the dataframe
+2022-09-17 20:55:49,368 INFO root 		Single data frame created for all files in GoodRawFolder
+2022-09-17 20:55:49,370 INFO root 		Converted data frame to Dictionary
+2022-09-17 20:55:49,370 INFO root 		Create "Results" collection
+2022-09-17 20:55:49,498 INFO root 		Data Successfully Loaded into Mongo DB
+2022-09-17 20:55:49,518 INFO werkzeug 127.0.0.1 - - [17/Sep/2022 20:55:49] "POST /predict HTTP/1.1" 200 -
